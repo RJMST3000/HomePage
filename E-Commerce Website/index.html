@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page of Shizen Bonsai">
+  <meta name="author" content="Mohammad Taukir Reza">
+  <title>WELCOME TO SHIZEN BONSAI</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    /* Styling the container which contains image slider and introduction to website */
+    .container1 {
+      margin-top: 40px;
+      margin-left: 5px;
+      margin-right: 36px;
+      height: 590px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    /* Styling the image and text box inside container1 div */
+    .box {
+      height: 97%;
+      width: 50%;
+      margin: 8px;
+    }
+
+    .box2margin {
+      margin-top: 118px;
+    }
+
+    /* Stlying the heading inside container1 */
+    .h1 {
+      text-align: center;
+      margin-top: 0px;
+      font-family: 'Trebuchet MS';
+      font-size: 50px;
+      color: black;
+    }
+
+    /* Stlying the paragraph inside container1 */
+    .p1 {
+      margin: 10px 40px;
+      font-family: 'Trebuchet MS';
+      border: 2px solid black;
+      height: 14em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: transparent;
+      border-radius: 40px;
+      padding: 0px 30px;
+      color: black;
+      font-size: 26px;
+
+    }
+
+    /* Stliyng the box which contains image and the image */
+    .box1 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .img1 {
+      height: 720px;
+      width: 650px;
+      border-radius: 20px;
+    }
+
+    /* Styling the shop now button */
+    .buybutton {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .link {
+      font-size: 25px;
+      font-weight: bold;
+      color: green;
+      background-color: white;
+      padding: 10px 40px;
+      border-radius: 50px;
+      border: 3px solid green;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      transition: padding 0.8s ease 0s;
+    }
+
+    .link:hover {
+      background-color: green;
+      color: white;
+      padding: 12px 50px
+    }
+
+
+    /* Styling middle content of home page which contains features of the website */
+    .midcontent {
+      margin-top: 76px;
+      margin-bottom: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #DADADA;
+      width: 100%;
+      height: 220px;
+    }
+
+    .midbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      padding: 17px;
+      margin: 61px;
+      font-size: 20px;
+    }
+
+    .para1 {
+      border: transparent;
+      background-color: #bcbab8;
+      padding: 25px;
+      border-radius: 39px;
+      font-family: sans-serif;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section which contains  navigation bar -->
+  <header>
+    <div class="head" id="head">
+      <!-- logo of website -->
+      <img src="../Images/logo.png" alt="logo">
+      <!-- navigation bar -->
+      <nav class="navbar">
+        <table>
+          <tr class="nav-items">
+            <th><a href="index.html" style="color:black; background-color: white; border-radius: 40px;">HOME</a></th>
+            <!--Styling this menu with internal CSS-->
+            <th><a href="Products.html">PRODUCTS</a></th>
+            <th><a href="Blog.html">BLOG</a> </th>
+            <th><a href="Research.html">RESEARCH</a></th>
+            <th><a href="Aboutus.html">ABOUT US</a>
+            </th>
+            <th><a href="ContactUs.html">CONTACT US</a></th>
+          </tr>
+        </table>
+      </nav>
+    </div>
+  </header>
+  <!-- container which contains image slider with introduction -->
+  <div class="container1">
+    <!--Image slider -->
+    <div class="box box1" id="image-slider">
+      <img class="img1" src="../Images/bonsai3.jpg" alt="logo">
+    </div>
+    <!-- About Shizen Bonsai website -->
+    <div class="box box2">
+      <h1 class="box2margin h1">WELCOME TO <span style="color:green">SHIZEN BONSAI</span></h1>
+      <!--Using Internal CSS in span tag -->
+      <div class="box2margin p1">
+        <p>Our Bonsai plants are the ideal way of adding a touch of charm and serenity into your home or a business
+          environment. We
+          offer beautiful, immaculate, mesmerizing and healthy bonsai plants at a considerable price.</p>
+        <p style="margin-top: 60px;"> Buy the enchanting bonsai plants of your choice today from shizen bonsai.</p>
+      </div>
+      <!-- Shop link button which navigates customer to products page -->
+      <div class="box2margin buybutton">
+        <a href="Products.html"><button class="link">SHOP NOW</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- Midlle content which contains features of Shizen Bonsai website -->
+  <div class="midcontent">
+    <div class="midbox">
+      <p class="para1">DELIVERY ALL OVER NEPAL</p>
+    </div>
+    <div class="midbox">
+      <p class="para1">HEALTHY PRODUCTS</p>
+      <p></p>
+    </div>
+    <div class="midbox">
+      <p class="para1">SATISFIED CUSTOMER</p>
+    </div>
+  </div>
+  <!-- footer-->
+  <footer>
+    <!-- div section which contains footer contents-->
+    <div class="foot">
+      <p class="para2">Copyright &copy 2023 SHIZEN BONSAI All Rights Reserved</p>
+      <p class="address">Kathmandu,Nepal</p>
+      <img src="../Images/logo2.png" alt="logo">
+    </div>
+  </footer>
+  <script>
+    var images = ['../Images/bonsai1.jpg', '../Images/bonsai2.jpg', '../Images/bonsai3.jpg', '../Images/bonsai4.jpeg']; //Declaring an array of images
+    var i = 0; //initializing a variable 0
+    setInterval(slider, 2000); // setting an interval of 2s for slider function
+    var imgs = document.getElementById("image-slider"); //Getting an element by an id
+    // Declaring a function which slides the image
+    function slider()
+    {
+      if (i < images.length) {
+        i = i + 1;
+      }
+      else {
+        i = 1;
+      }
+      imgs.innerHTML = `<img class="img1" src =` + images[i - 1] + ` alt="logo">`; 
+    }  
+  </script>
+  <script src="../Javascript/colorchange.js"></script> <!-- External javascript linking -->
+</body>
+</html>

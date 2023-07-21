@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us page of Shizen Bonsai">
+    <meta name="author" content="Bibhav Shrestha">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>CONTACT US | SHIZEN BONSAI</title>
+    <style>
+        /* Styling container which contains form and image */
+        .container {
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            justify-content: space-evenly;
+        }
+
+        /* Styling heading above form box */
+        .form-container h1 {
+            font-size: 40px;
+            font-family: 'Lucida Sans';
+            margin-bottom: 30px;
+            color: #064635;
+        }
+
+        /*Styling form box */
+        .form {
+            padding: 20px 0px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        /* Styling fields which contain input of form */
+        .fields {
+            margin: 20px 0px;
+        }
+
+        /* Styling form input box */
+        .fields input {
+            padding: 5px 0px;
+            width: 380px;
+            font-size: 18px;
+            border: 1.8px solid green;
+        }
+
+        /* Styling text area of form */
+        .fields textarea {
+            font-size: 18px;
+            border: 1.8px solid green;
+            width: 380px;
+            height: 220px;
+        }
+
+        /* Stlying submit button */
+        .submit {
+            background-color: green;
+            color: white;
+            border: none;
+            width: 380px;
+            text-align: center;
+            padding: 5px 0px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- header section which contains  navigation bar -->
+    <header>
+        <div class="head" id="head">
+            <!-- logo of website -->
+            <img src="../Images/logo.png" alt="logo">
+            <!-- navigation bar -->
+            <nav class="navbar">
+                <table>
+                    <tr class="nav-items">
+                        <th><a href="index.html">HOME</a></th>
+                        <th><a href="Products.html">PRODUCTS</a></th>
+                        <th><a href="Blog.html">BLOG</a> </th>
+                        <th><a href="Research.html">RESEARCH</a></th>
+                        <th><a href="Aboutus.html">ABOUT US</a> </th>
+                        <th><a href="ContactUs.html"  style="color:black; background-color: white; border-radius: 40px;">CONTACT US</a></th> <!--Styling this menu with internal CSS-->
+                    </tr>
+                </table>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <!-- div section which contains contact us form and image -->
+        <div class="container">
+            <!-- container of form -->
+            <div class="form-container">
+                <!-- heading -->
+                <h1>HOW CAN WE HELP YOU?</h1>
+                <div class="form">
+                    <!-- contact us form -->
+                    <form name="ContactForm" onsubmit="return validateForm()">
+                        <div class="fields">
+                            <input type="text" name="name" id="name" placeholder="Enter your name...">
+                        </div>
+                        <div class="fields">
+                            <input type="email" name="email" id="email" placeholder="Enter your email...">
+                        </div>
+                        <div class="fields">
+                            <input type="number" name="phone" id="phone" placeholder="Enter your phone no....">
+                        </div>
+                        <div class="fields">
+                            <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <input type="submit" value="SUBMIT" class="submit">
+                    </form>
+                </div>
+            </div>
+            <!-- contact us related image -->
+            <div class="contact-image">
+                <img src="../Images/contactus.jpg" alt="contactus" style="height: 581px;
+                width: 680px;">  <!-- Using internal CSS to adjust height and width -->
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <!-- div section which contains footer contents-->
+        <div class="foot">
+            <p class="para2">Copyright &copy 2023 SHIZEN BONSAI All Rights Reserved</p>
+            <p class="address">Kathmandu,Nepal</p>
+            <img src="../Images/logo2.png" alt="logo">
+        </div>
+    </footer>
+    <script>
+        // function which validates the contact us form
+        function validateForm() {
+            var name = document.forms["ContactForm"]["name"].value;
+            var email = document.forms["ContactForm"]["email"].value;
+            var phoneNum = document.forms["ContactForm"]["phone"].value;
+            var message = document.forms["ContactForm"]["message"].value;
+
+            if (name == "" || email == "" || phoneNum == "" || message == "") 
+            {
+                alert("Please fill every fields of the form");
+                return false; //prevents form from being submitted
+            }
+
+            else {
+                alert("We will respond to you very soon ! Keep checking your email ! Thank you");
+            }
+        }
+    </script>
+    <script src="../Javascript/colorchange.js"></script> <!-- External javascript linking -->
+</body>
+</html>
